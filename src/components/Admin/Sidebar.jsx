@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 function SIdebar() {
   return (
@@ -7,31 +8,31 @@ function SIdebar() {
         <div className="sidebar-brand-icon rotate-n-15">
           <i className="fas fa-laugh-wink"></i>
         </div>
-        <div className="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div className="sidebar-brand-text mx-3">Emedicine</div>
       </a>
       <hr className="sidebar-divider my-0" />
       <li className="nav-item active">
-        <a className="nav-link" href="/">
+        <Link className="nav-link" to="/AdminDashboard">
           <i className="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
-        </a>
+        </Link>
       </li>
       <hr className="sidebar-divider" />
       <div className="sidebar-heading">Interface</div>
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#!" data-toggle="collapse" data-target="#collapseTwo">
+        <Link className="nav-link collapsed" to="/AdminOrders" >
           <i className="fas fa-fw fa-cog"></i>
-          <span>Components</span>
-        </a>
+          <span>orders</span>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#!" data-toggle="collapse" data-target="#collapseUtilities">
+        <Link className="nav-link collapsed" to="/CustomerList" >
           <i className="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
-        </a>
+          <span>customerlist</span>
+        </Link>
       </li>
       <hr className="sidebar-divider" />
-      <div className="sidebar-heading">Addons</div>
+      <div className="sidebar-heading">medicinelist</div>
       <li className="nav-item">
         <a className="nav-link" href="/charts.html">
           <i className="fas fa-fw fa-chart-area"></i>
@@ -39,10 +40,10 @@ function SIdebar() {
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/tables.html">
+        <Link className="nav-link" to="/Medicine">
           <i className="fas fa-fw fa-table"></i>
-          <span>Tables</span>
-        </a>
+          <span>medicinelist</span>
+        </Link>
       </li>
       <hr className="sidebar-divider d-none d-md-block" />
     </ul>

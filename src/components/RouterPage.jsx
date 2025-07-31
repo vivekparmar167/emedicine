@@ -11,6 +11,9 @@ import AddminDashBoard from './Admin/AdminDashboard';
 import AdminOrders from './Admin/AdminOrders';
 import CustomerList from './Admin/CustomerList';
 import Medicine from './Admin/Medicine';
+import AddMedicine from './Admin/AddMedicine';
+import DashboardContent from './Admin/DashboardContent';
+import UpdateMedicine from './Admin/UpdateMedicine';
 
 
 
@@ -27,10 +30,13 @@ export default function RouterPage(){
                 <Route path='/Profile' element={<Profile/>}></Route>
 
 
-                <Route path='/AddminDashBoard' element={<AddminDashBoard/>}></Route>
+                <Route path='/AdminDashBoard' element={<DashboardContent/>}></Route>
                 <Route path='/AdminOrders' element={<AdminOrders/>}></Route>
                 <Route path='/CustomerList' element={<CustomerList/>}></Route>
                 <Route path='/Medicine' element={<Medicine/>}></Route>
+                <Route path='/AddMedicine' element={<AddMedicine/>}></Route>
+                <Route path='/UpdateMedicine/:id' element={<UpdateMedicine/>}></Route>
+
                 
             </Routes>
        

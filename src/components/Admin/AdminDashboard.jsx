@@ -4,7 +4,7 @@ import Topbar from "./Topbar";
 import Footer from "./Footer";
 import DashboardContent from "./DashboardContent";
 
-export default function AdminDashboard(){
+export default function AdminDashboard({ children }){
     return(
          <div id="page-top">
       <div id="wrapper">
@@ -14,7 +14,7 @@ export default function AdminDashboard(){
           <div id="content">
             <Topbar />
             <div className="container-fluid">
-              <DashboardContent />
+              {children}
             </div>
           </div>
 

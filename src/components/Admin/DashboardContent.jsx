@@ -1,8 +1,10 @@
 import React from "react";
+import AdminDashboard from "./AdminDashboard";
 
 function DashboardContent() {
   return (
     <>
+    <AdminDashboard>
       <div className="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 className="h3 mb-0 text-gray-800">Dashboard</h1>
         <a href="#!" className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
@@ -17,7 +19,7 @@ function DashboardContent() {
             <div className="card-body">
               <div className="row no-gutters align-items-center">
                 <div className="col mr-2">
-                  <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
+                  <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">medicines</div>
                   <div className="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                 </div>
                 <div className="col-auto">
@@ -34,7 +36,7 @@ function DashboardContent() {
             <div className="card-body">
               <div className="row no-gutters align-items-center">
                 <div className="col mr-2">
-                  <div className="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
+                  <div className="text-xs font-weight-bold text-success text-uppercase mb-1">customers</div>
                   <div className="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                 </div>
                 <div className="col-auto">
@@ -77,7 +79,7 @@ function DashboardContent() {
             <div className="card-body">
               <div className="row no-gutters align-items-center">
                 <div className="col mr-2">
-                  <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
+                  <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">orders</div>
                   <div className="h5 mb-0 font-weight-bold text-gray-800">18</div>
                 </div>
                 <div className="col-auto">
@@ -88,6 +90,7 @@ function DashboardContent() {
           </div>
         </div>
       </div>
+      </AdminDashboard>
     </>
   );
 }
